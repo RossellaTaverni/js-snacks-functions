@@ -1,6 +1,7 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
 const word = 'javascript';
+const numeroVocali = myStringa(word);
 
 
 // Dichiara la funzione qui.
@@ -19,7 +20,7 @@ function myStringa(parola){
 
 // Invoca la funzione qui e stampa il risultato in console
 myStringa(word);
-console.log(myStringa(word));
+console.log(numeroVocali);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
