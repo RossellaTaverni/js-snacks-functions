@@ -5,13 +5,30 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
+const myName = 'Mario';
 
 
 // Dichiara la funzione qui.
+function saluto(stringa){
+   
+    // Otteniamo l'ora corrente
+    const ora = new Date().getHours();  // Otteniamo l'ora in formato 24 ore (0-23)
+
+   // Controlliamo in quale intervallo si trova l'ora corrente
+    if (ora >= 6 && ora < 13) {
+        console.log('Buongiorno ' + stringa + '!');
+    } 
+    else if (ora >= 12 && ora < 17) {
+        console.log('Buon pomeriggio ' + stringa + '!');
+    } 
+    else{
+        console.log('Buonasera ' + stringa + '!');
+    } 
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+saluto(myName);
 
 
 
