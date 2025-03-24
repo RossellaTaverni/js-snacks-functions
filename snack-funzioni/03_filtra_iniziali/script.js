@@ -4,7 +4,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 const letter  = 'A'
 
 // Dichiara la funzione qui.
-function namesWhitA(word, lettera){
+/*function namesWhitA(word, lettera){
     // Con Array.isArray andiamo a verificare che l'argomento passato alla funzione sia effettivamente un array
     if(Array.isArray(word)){
         // Usiamo filter() per iterare su ogni parola nell'array. 
@@ -13,8 +13,13 @@ function namesWhitA(word, lettera){
         // Per non tener conto se la lettera è maiuscola o minuscola usiamo toLowerCase() sia sulla lettera che sul primo carattere della parola.
         return word.filter(word => word.charAt(0).toLowerCase() === lettera.toLowerCase());
     }
-}
+}*/
 
+const namesWhitA = (word,lettera) =>{
+    if(Array.isArray(word)){
+        return word.filter(word => word.charAt(0).toLowerCase() === lettera.toLowerCase());
+    } 
+}
 // Invoca la funzione qui e stampa il risultato in console
 namesWhitA(names,letter);
 console.log(namesWhitA(names,letter));
