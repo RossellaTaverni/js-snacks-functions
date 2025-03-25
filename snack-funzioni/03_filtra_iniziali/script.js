@@ -7,7 +7,7 @@ const letter  = 'A'
 /*function namesWhitA(word, lettera){
     // Con Array.isArray andiamo a verificare che l'argomento passato alla funzione sia effettivamente un array
     if(Array.isArray(word)){
-        // Usiamo filter() per iterare su ogni parola nell'array. 
+        // Usiamo filter() per iterare (esaminare) su ogni parola nell'array. 
         // Il metodo filter() restituisce un nuovo array che contiene solo gli elementi che soddisfano una determinata condizione.
         // Otteniamo il primo carattere della parola con charAt(0).
         // Per non tener conto se la lettera è maiuscola o minuscola usiamo toLowerCase() sia sulla lettera che sul primo carattere della parola.
