@@ -18,7 +18,7 @@ function saluto(stringa){
     if (ora >= 6 && ora < 13) {
         console.log('Buongiorno ' + stringa + '!');
     } 
-    else if (ora >= 12 && ora < 17) {
+    else if (ora >= 13 && ora < 17) {
         console.log('Buon pomeriggio ' + stringa + '!');
     } 
     else{
